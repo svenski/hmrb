@@ -5,3 +5,7 @@ authors = ["Kristian Boda"]
 
 [lib]
 crate-type = ["dylib"]
+
+[dependencies]
+pest = "2.0"
+pest_derive = "2.0"
