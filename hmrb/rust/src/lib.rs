@@ -1,4 +1,11 @@
+extern crate pest;
+#[macro_use]
+extern crate pest_derive;
+
+
 use std::os::raw::c_int;
+
+pub mod lexer;
 
 #[no_mangle]
 pub extern "C" fn is_prime(n: *const c_int) -> c_int {

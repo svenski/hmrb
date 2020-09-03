@@ -1,0 +1,8 @@
+name = { (ASCII_ALPHANUMERIC | "-" | "_")+ }
+grammar = { (law | var)* }
+var = {"Var" ~ name ~ ":" }
+law = {"Law" ~ name? ~ ":" } 
+attributes = {attribute*}
+attribute = {"-" ~ name ~ ":"}
+
+WHITESPACE = _{ " " }
